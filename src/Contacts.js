@@ -10,6 +10,11 @@ import './Contacts.css';
 */
 
 export default function Contacts() {
+    const[contacts, setContacts] =useState([
+        {name:'Ivan Ivanov', avatar: '/images/avatars/1.jpg', status:true},
+        {name:'Georgi Georgiev', avatar:'/images/avaters/2.img', status:false},
+        {name:'Peter Petrov', avater:'/images/avatars/3.img', status:true},
+    ]);
     return (
         <div>
 
