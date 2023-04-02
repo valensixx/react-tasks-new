@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './Contacts.css';
+import ContactsProps from "./ContactsProps";
 
  /*
     Create Contact component like contact form in Facebook.
@@ -17,7 +18,7 @@ export default function Contacts() {
     ]);
     return (
         <div>
-
+            < ContactsProps contacts = {contacts} />
         </div>
     );
 };
