@@ -7,16 +7,16 @@ export default function ContactsProps(props) {
             background: '#333',
         },
         img: {
-            height:50,
-            width:50,
+            height: 50,
+            width: 50,
             marginTop: 10,
             borderRadius: '50%',
         },
         nameContainer: {
             color: 'white',
-            marginLeft:10,
+            marginLeft: 10,
         },
-        innerContainer:{
+        innerContainer: {
             display: 'flex',
             alignItems: 'center',
         },
@@ -34,10 +34,12 @@ export default function ContactsProps(props) {
     function renderSingleContact(contact) {
         return (
             <div style={styles.innerContainer}>
-                <div style={{position: 'relative'}}>
+                <div style={{ position: 'relative' }}>
                     <img style={styles.img} src={contact.avatar} />
-                    <div style={styles.circle}>
-
+                    <div style={{
+                        ...styles.circle,
+                        background: contact.status ? 'green' : 'red'
+                        }}>
                     </div>
                 </div>
                 <div style={styles.nameContainer}>
