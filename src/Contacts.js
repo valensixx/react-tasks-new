@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import './Contacts.css';
 import ContactsProps from "./ContactsProps";
 
  /*
