@@ -12,9 +12,9 @@ import ContactsProps from "./ContactsProps";
 
 export default function Contacts() {
     const[contacts, setContacts] =useState([
-        {name:'Ivan Ivanov', avatar: '/images/avatars/1.jpg', status:true},
-        {name:'Georgi Georgiev', avatar:'/images/avaters/2.img', status:false},
-        {name:'Peter Petrov', avater:'/images/avatars/3.img', status:true},
+        {name:'Ivan Ivanov', avatar: '/images/avatars/img1.jpg', status:true},
+        {name:'Georgi Georgiev', avatar:'/images/avatars/img2.jpg', status:false},
+        {name:'Peter Petrov', avatar:'/images/avatars/img3.jpg', status:true},
     ]);
     return (
         <div>
