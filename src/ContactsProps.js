@@ -19,14 +19,26 @@ export default function ContactsProps(props) {
         innerContainer:{
             display: 'flex',
             alignItems: 'center',
-        }
+        },
+        circle: {
+            width: 15,
+            height: 15,
+            background: 'green',
+            borderRadius: '50%',
+            position: 'absolute',
+            right: 0,
+            bottom: 3,
+        },
     };
 
     function renderSingleContact(contact) {
         return (
             <div style={styles.innerContainer}>
-                <div>
+                <div style={{position: 'relative'}}>
                     <img style={styles.img} src={contact.avatar} />
+                    <div style={styles.circle}>
+
+                    </div>
                 </div>
                 <div style={styles.nameContainer}>
                     {contact.name}
