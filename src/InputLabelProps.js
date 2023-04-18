@@ -1,17 +1,11 @@
-// import React,{useState} from "react";
-// import InputLabel from "./InputLabel";
+ import React,{useState} from "react";
+ import InputLabel from "./InputLabel";
 
-// export default function InputLabelProps(props){
+export default function InputLabelProps(props){
 
-//     return(
-//         <div>
-//             <InputLabel
-//                 title="Example"
-//                 placeholder="Example placeholder"
-//                 onInput={(e)=>{
-//                     console.log(e.target.value)
-//                 }}
-//             />
-//         </div>
-//     );
-// }
+    return(
+        <div>
+            
+        </div>
+    );
+}

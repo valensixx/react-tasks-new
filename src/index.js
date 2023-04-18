@@ -15,6 +15,7 @@ root.render(
     <UserDetails />
     <Contacts />
     <Input/>
+    <InputLabel />
   </React.StrictMode>
 );
 
