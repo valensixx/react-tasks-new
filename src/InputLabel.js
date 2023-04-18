@@ -1,4 +1,5 @@
- import React, { useState } from "react";
+import React from "react";
+import InputLabelProps from "./InputLabelProps";
 
 
  /*
@@ -6,10 +7,17 @@
  text for a placeholder and function onInput
  */
 
-export default function LableInput(){
-    return (
-        <div>
-            
-        </div>
-    );
-}
+ 
+ export default function LabelInput(){
+     return (
+         <div>
+             <InputLabelProps 
+                 title="Example"
+                 placeholder="Example placeholder"
+                 onInput={(e)=>{
+                     console.log(e.target.value);
+                 }}
+             />
+         </div>
+     );
+ }
