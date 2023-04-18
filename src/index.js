@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import UserDetails from './UserDetails';
 import Contacts from './Contacts';
+import InputLabel from './InputLabel';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,6 +13,7 @@ root.render(
     <App />
     <UserDetails />
     <Contacts />
+    <InputLabel />
   </React.StrictMode>
 );
 

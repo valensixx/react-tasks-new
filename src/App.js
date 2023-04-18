@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import './App.css';
-
 /*
 create checkbox, text "i agree" and registration button
 if checkbox is not clicked must be disabled and it can not be clicked
