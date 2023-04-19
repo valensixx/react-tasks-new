@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import MenuProps from "./MenuProps";
+import "./MenuProps.css";
 
 /*
 Create Menu component that takes array (link and label).
@@ -13,7 +15,7 @@ export default function Menu(){
     ];
     return(
         <div>
-            
+            <MenuProps items = {items} />
         </div>
     );
 }
