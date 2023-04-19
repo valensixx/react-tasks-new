@@ -8,11 +8,13 @@ import InputLabel from './InputLabel';
 import Input from './Input';
 import Form from './FormAddDelete';
 import Table from './Table';
+import Menu from './Menu';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Menu/>
     <App />
     <UserDetails />
     <Contacts />
