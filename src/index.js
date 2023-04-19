@@ -7,6 +7,7 @@ import Contacts from './Contacts';
 import InputLabel from './InputLabel';
 import Input from './Input';
 import Form from './FormAddDelete';
+import Table from './Table';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,6 +19,7 @@ root.render(
     <Input/>
     <InputLabel />
     <Form />
+    <Table />
   </React.StrictMode>
 );
 
