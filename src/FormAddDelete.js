@@ -15,7 +15,7 @@ export default function Form() {
 
     const [currentSelection, setCurrentSelection] = useState('');
 
-    const [array, serArray] = useState([]);
+    const [array, setArray] = useState([]);
 
     return (
         <div>
@@ -28,15 +28,23 @@ export default function Form() {
                 </option>)}
             </select>
             <button onClick={() => {
-                if(currentSelection != ''){
+                if (currentSelection != '') {
                     array.push(currentSelection);
-                    serArray([...array]);
+                    setArray([...array]);
                     setCurrentSelection('');
                 }
             }}>Add</button>
             <div>
                 <ul>
-                    {array.map(i => <li key={i}>{i}</li>)}
+                    {array.map((i, index) =>
+                        <li key={i}>
+                            {i}
+                            <button onClick={()=>{
+                                array.splice(index, 1);
+                                setArray([...array]);
+                            }}>Delete</button>
+                        </li>
+                    )}
                 </ul>
             </div>
         </div>
