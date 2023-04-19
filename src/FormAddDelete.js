@@ -13,15 +13,26 @@ export default function Form() {
         { label: 'Option 3', value: 3 },
     ]);
 
+    const[currentSelection, setCurrentSelection] = useState('');
+
+    const[array, serArray] = useState([]);
+
     return (
         <div>
-            <select>
+            <select value={currentSelection}>
                 <option value="">Select</option>
                 {selectOptopns.map(o => <option key={o.value} value={o.value}>
                     {o.label}
                 </option>)}
             </select>
-            <button>Add</button>
+            <button onClick={()=>{
+
+            }}>Add</button>
+            <div>
+                <ul>
+                    {array.map(i => <li key={i}>{i}</li> )}
+                </ul>
+            </div>
         </div>
     );
 }
