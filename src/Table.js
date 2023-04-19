@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import TableProps from "./TableProps";
+import "./TableProps.css";
 /*
 Create Table component - it takes data as props  - header of col (array of strings) and
 data in cells as array of arrays.
@@ -23,7 +24,7 @@ export default function Table() {
 
     return (
         <div>
-            
+            <TableProps rows={rows} columns={columns}/>
         </div>
     );
 }
